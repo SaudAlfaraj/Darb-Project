@@ -1,0 +1,188 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans Arabic";
+  background-color: #f1f1f1;
+}
+
+/* الناف بار -----------------------------------------------------------------------------------------*/
+
+.navbar {
+  background-color: #ffffff;
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  z-index: 9;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: large;
+  color: #3a3a3a;
+  transition: 0.25s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #fa6240;
+  transition: 0.25s ease-in-out;
+}
+
+#nav_btn {
+  background-color: #fa6240;
+  font-weight: 600;
+  color: white;
+  padding: 0.3% 3%;
+  margin-left: 3%;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.circel {
+  margin: auto;
+  /* background-color: #FA6240; */
+  position: relative;
+  height: auto;
+  width: auto;
+  top: -280px;
+  left: -30%;
+}
+
+
+/* الواجهة العلوية -----------------------------------------------------------------------------------------*/
+
+/* الجد */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+    padding: 6%;
+    background-image: url("/HomePage/img/Group\ 1.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 13%;
+    
+}
+
+/* أب النصوص */
+.main .text {
+    text-align: center;
+}
+
+/* العنوان */
+.main h1 {
+    font-size: 46px;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+/* النص */
+.main p {
+    text-align: center;
+    color: #787878;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* أب الأزرار */
+.main_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+    margin: 1%;
+}
+/* الزر الأساسي */
+
+.main_btn {
+    background: rgb(250,98,64);
+    background: linear-gradient(180deg, rgba(250,98,64,1) 0%, rgba(220,115,91,1) 100%);
+    color: white;
+    padding: 8px 84px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    transition: .25s ease-in-out;
+
+}
+
+/* عند الإشارة */
+
+.main_btn:hover {
+    background-color: #be482e;
+    color: whitesmoke;
+    transition: .25s ease-in-out;
+}
+
+/* الزر الفرعي */
+.sec_btn {
+    border: 3px solid #fa6240;
+    color: #fa6240;
+    padding: 6px 60px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 23px;
+    transition: .25s ease-in-out;
+
+}
+
+/* عند الإشارة */
+
+.sec_btn:hover {
+    background-color: #fa6240;
+    color: whitesmoke;
+    transition: .25s ease-in-out;
+}
+
+
+/* الأرقام والأحصائيات -----------------------------------------------------------------------------------------*/
+
+
+.num {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.num_title h5 {
+    color: #787878;
+    font-weight: 500;
+}
+
+.num_title h3 {
+    color: #3a3a3a;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .circel {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    display: flex;
+  }
+
+  #nav_btn {
+    display: none;
+  }
+}
