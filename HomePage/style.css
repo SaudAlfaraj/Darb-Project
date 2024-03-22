@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "IBM Plex Sans Arabic";
-  background-color: #f1f1f1;
 }
 
 /* الناف بار -----------------------------------------------------------------------------------------*/
@@ -61,14 +60,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 1%;
+    margin-top: 8%;
     padding: 6%;
     background-image: url("/HomePage/img/Group\ 1.png");
 
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    padding-bottom: 13%;
+    /* padding-bottom: 13%; */
     
 }
 
@@ -81,15 +80,15 @@ body {
 .main h1 {
     font-size: 46px;
     color: #3a3a3a;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* النص */
 .main p {
     text-align: center;
     color: #787878;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 /* أب الأزرار */
@@ -108,7 +107,7 @@ body {
     background: linear-gradient(180deg, rgba(250,98,64,1) 0%, rgba(220,115,91,1) 100%);
     color: white;
     padding: 8px 84px;
-    border-radius: 12px;
+    border-radius: 15px;
     font-weight: bold;
     font-size: 22px;
     transition: .25s ease-in-out;
@@ -128,7 +127,7 @@ body {
     border: 3px solid #fa6240;
     color: #fa6240;
     padding: 6px 60px;
-    border-radius: 12px;
+    border-radius: 15px;
     font-weight: bold;
     font-size: 23px;
     transition: .25s ease-in-out;
@@ -156,12 +155,199 @@ body {
 .num_title h5 {
     color: #787878;
     font-weight: 500;
+    font-size: 25px;
 }
 
 .num_title h3 {
     color: #3a3a3a;
 }
 
+/* قسم البطاقات */
+
+.num_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  margin-top: 3%;
+}
+
+.num_card {
+  width:375px;
+  height: 197px;
+  text-align: right;
+  padding: 2% 4% 0 2%;
+  border: 4px solid #fa6240;
+  /* border-image: linear-gradient(#ff9e89, #fa6240) ,50;  */
+  border-radius: 42px ;
+  margin-bottom: 5%;
+  transition: .25s ease-in-out;
+}
+
+.num_card h1{
+display: flex;
+justify-content: space-between;
+color: #3a3a3a;
+font-size: 54px;
+font-weight: 600;
+}
+
+.num_card h4 {
+  color: #787878;
+  font-size: 34px;
+font-weight: 600;
+
+}
+
+.num_card i {
+  color: #fa6240;
+  font-size: 55px;
+}
+
+
+
+/* الخدمات -----------------------------------------------------------------------------------------*/
+
+.services {
+  margin-top: 5%;
+}
+
+.ser_title {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.ser_title h1 {
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+.ser_cards {
+  display: flex;
+  justify-content: center;
+  gap: 9%;
+  flex-wrap: wrap;
+}
+
+
+.ser_card {
+  margin: 2% 3%;
+  width: 405px;
+  height: 209px;
+  border: 2px solid #C6C6C6;
+  border-radius: 15px;
+  padding: 1.5%;
+}
+
+.ser_card h2 {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  color: #2a2a2a;
+  font-weight: bold;
+}
+
+.ser_card h6 {
+  color: #787878;
+  font-size:17px;
+  font-weight: 700;
+  margin-bottom: 7%;
+}
+
+/* زر بطاقة الخدمات */
+
+.ser_card a {
+  background: rgb(250,98,64);
+  background: linear-gradient(180deg, rgba(250,98,64,1) 0%, rgba(220,115,91,1) 100%);
+  color: white;
+  padding: 2.3% 19%;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 17px;
+  transition: .25s ease-in-out;
+  text-decoration: none;
+}
+
+.ser_card a:hover {
+  border-radius: 15px;
+}
+
+.icon {
+  font-size: 45px;
+  color: #fa6240;
+  margin-left: 5%;
+}
+
+
+/* لماذا نحن -----------------------------------------------------------------------------------------*/
+
+.why {
+  margin-top: 7%;
+}
+
+.why_title {
+  text-align: center;
+}
+
+.why_title h1 {
+  color: #3a3a3a;
+  font-size: 45px;
+}
+
+.why_title h5 {
+  color: #787878;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+/* جهة البطاقات */
+
+.why_cards {
+  display: flex;
+  justify-content:center;;
+  margin-top: 5%;
+  flex-wrap: wrap;
+  gap: 7%;
+}
+
+.why_card {
+  border: 2px solid #C6C6C6;
+  /* width: 100%; */
+  color: #3a3a3a;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+#width_card {
+
+  margin:5%auto ;
+  padding-top: 4%;
+  width: 850px;
+  max-width: 80%;
+  height: 490px;
+  text-align: center;
+  border-radius: 31px;
+}
+
+#height_card {
+  padding-top: 3%;
+  width: 320px;
+  height: 500px;
+  border-radius: 31px;
+  text-align: center;
+}
+
+#min_card {
+  width: 425px;
+  height: 170px;
+  border-radius:21px;
+  text-align: center;
+  margin-top: 9%;
+}
+
+
+/* الجزء السفلي من الموقع */
 
 
 
@@ -184,5 +370,24 @@ body {
 
   #nav_btn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width:428px) {
+  .main_btns {
+    flex-direction: column;
+  }
+  .main_btn {
+    margin-bottom: 3%;
+    width: 100%;
+  }
+  .sec_btn {
+    width: 100%;
   }
 }
