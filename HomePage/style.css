@@ -1,9 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
 
-body {
+
+*{
   margin: 0;
   padding: 0;
+}
+body {
+
   font-family: "IBM Plex Sans Arabic";
 }
 
@@ -306,9 +310,11 @@ font-weight: 600;
 .why_cards {
   display: flex;
   justify-content:center;;
+  align-items: center;
   margin-top: 5%;
   flex-wrap: wrap;
   gap: 7%;
+  margin-bottom: 15%;
 }
 
 .why_card {
@@ -316,7 +322,6 @@ font-weight: 600;
   /* width: 100%; */
   color: #3a3a3a;
   text-align: center;
-  margin-bottom: 15%;
 }
 
 #width_card {
@@ -339,17 +344,17 @@ font-weight: 600;
 }
 
 #min_card {
+  margin-top:4% ;
+  display: flex;
   width: 425px;
   height: 170px;
   border-radius:21px;
   text-align: center;
-  margin-top: 9%;
+  margin-bottom: 10%;
 }
 
 
 /* الجزء السفلي من الموقع */
-
-
 
 
 

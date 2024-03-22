@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel="stylesheet" href="style.css">
+        <title>darb</title>
+    </head>
+<body dir="rtl">
+    <nav>
+     
+        <button class="btn" href="#" >مشاركة</button> <!-- مشاركة او حفظ نتيجه الاختبار-->
+        <img class="img-fluid" src="/img/Group 3.png" alt="" width="100">
+        <button href="#" id="l-last">حفظ النتيجة</button>
+    </nav>
+    <h1> إختبار الميول <span style="color: #787878; font-size: 20px;">(لطلاب الثانوي)</span></h1>
+
+    <div id="questions">
+        <!-- أدخل الأسئلة هنا -->
+        <div class="question">
+          <p>1: هل أنت تفضل مساعدة الأخرين ؟ </p>
+          <div class="options">
+            <input type="radio" name="q1" value="6" id="strongly_agree">  
+            <input type="radio" name="q1" value="5" id="agree_1"> 
+            <input type="radio" name="q1" value="4"" id="agree-2"> 
+            <input type="radio" name="q1" value="3" id="neutral"> 
+            <input type="radio" name="q1" value="2" id="not_agree_2"> 
+            <input type="radio" name="q1" value="1" id="not_agree_1"> 
+            <input type="radio" name="q1" value="0" id="disagree"> 
+          </div>
+        </div>
+        <!-- تكرار الأسئلة الأخرى -->
+      </div>
+    
+      <button onclick="submitTest()">تقديم</button>
+    
+      <div id="result">
+        <h2>نتيجتك:</h2>
+        <div id="specialties">
+          <!-- ستظهر النتائج هنا -->
+        </div>
+      </div>
+
+</body>
+</html>
