@@ -5,7 +5,6 @@
 *{
   margin: 0;
   padding: 0;
-  
 }
 body {
   transition: .25s ease-in-out;
@@ -22,7 +21,7 @@ body {
   border-radius: 20px;
   z-index: 9;
 }
-/* النصوص للناف */
+
 .nav-link {
   margin: auto;
   font-weight: 600;
@@ -31,18 +30,14 @@ body {
   transition: 0.25s ease-in-out;
 }
 
-/* عند الإشارة */
 .nav-link:hover {
   color: #fa6240;
   transition: 0.25s ease-in-out;
 }
 
-/* دفع الناف بار لليمين */
 .navbar-nav {
   padding-right: 5%;
 }
-
-/* زر الناف */
 
 #nav_btn {
   background-color: #fa6240;
@@ -63,12 +58,12 @@ body {
 }
 
 .head h1 {
-    color: #3a3a3a;
+    color: #fa6240;
     font-size: 60px;
 }
 
 .head h2 {
-    color: #fa6240;
+    color: #1e1e1e;
 }
 
 .head h5 {
@@ -76,65 +71,61 @@ body {
 }
 
 
-.choose {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3%;
-  flex-wrap: wrap;
+.level {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #fa6240;
+    border-radius: 20px;
+    width: 270px;
+    height: 320px;
+    margin-bottom: 10%;
 }
 
-.choose button {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  border: 3px solid #fa6240;
-  background-color: white;
-  border-radius: 15px;
-  color: #fa6240;
-  width: 200px;
-  height: 50px;
-  margin-bottom: 2%;
+.level a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa6240;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+    height: 50px;
+    width: 230px;
+    margin-top: 18%;
 }
-
-.vid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10% 0;
-}
-
 
 
 @media screen and (max-width: 1000px) {
   
-    .navbar {
-      width: 100%;
-      border-radius: 0;
-    }
+  .navbar {
+    width: 100%;
+    border-radius: 0;
   }
-  
-  @media screen and (max-width: 992px) {
-    .navbar-nav {
-      display: flex;
-    }
-  
-    #nav_btn {
-      display: none;
-    }
-    #a {
-      display: none;
-    }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    display: flex;
   }
 
+  #nav_btn {
+    display: none;
+  }
+  #a {
+    display: none;
+  }
+}
 
-  #a{
-    padding: 0%;
-  
-  }
-  #nav_btn{
-   padding: 5px 40px;
-   margin-left: 10px;
-  }
+#a{
+  padding: 0%;
+
+}
+#nav_btn{
+ padding: 5px 40px;
+ margin-left: 10px;
+}

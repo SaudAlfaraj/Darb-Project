@@ -5,7 +5,6 @@
 *{
   margin: 0;
   padding: 0;
-  
 }
 body {
   transition: .25s ease-in-out;
@@ -22,7 +21,7 @@ body {
   border-radius: 20px;
   z-index: 9;
 }
-/* النصوص للناف */
+
 .nav-link {
   margin: auto;
   font-weight: 600;
@@ -31,18 +30,14 @@ body {
   transition: 0.25s ease-in-out;
 }
 
-/* عند الإشارة */
 .nav-link:hover {
   color: #fa6240;
   transition: 0.25s ease-in-out;
 }
 
-/* دفع الناف بار لليمين */
 .navbar-nav {
   padding-right: 5%;
 }
-
-/* زر الناف */
 
 #nav_btn {
   background-color: #fa6240;
@@ -53,6 +48,7 @@ body {
   border-radius: 12px;
   font-size: 18px;
 }
+
 
 
   /* الواجهة العلوية */
@@ -75,78 +71,50 @@ body {
     color: #787878;
 }
 
+/* البطاقات */
 
-
-.cards{
-  border: 3px solid #FA6240;
-  min-width: 352px;
-  max-width: 452px;
-  height: 230px;
-  border-radius: 29px    ;
-  padding: 25px;
-  margin: 20px;
-  
-}
-.cards h2{
-  color: #1e1e1e;
-  font-size: 30px;
-  font-weight: 600
-}
-.cards p{
-  color: #3A3A3A;
-  font-size: 25px;
-  font-weight: 500;
-}
-.cards button{
-    background-color: #FA6240;
-    color: white;
-    font-size: 23px;
-    font-weight: 600;
-    border: none;
-    /* margin: 10px; */
-    margin-right: 0;
-    border-radius: 13px;
-    width: 230px;
-    height: 50px;
-  }
-  .container{
+.cards {
+    padding: 0% 5% 10% 5%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    align-items: center;
+    gap: 3%;
     flex-wrap: wrap;
-    gap: 5%;
+}
+
+
+/* البطاقة */
+.card {
+    margin-bottom: 3%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  
+  .navbar {
+    width: 100%;
+    border-radius: 0;
   }
-  
-  
-  @media screen and (max-width: 1000px) {
-  
-      .navbar {
-        width: 100%;
-        border-radius: 0;
-      }
-    }
-    
-    @media screen and (max-width: 992px) {
-      .navbar-nav {
-        display: flex;
-      }
-    
-      #nav_btn {
-        display: none;
-      }
-      #a {
-        display: none;
-      }
-    }
+}
 
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    display: flex;
+  }
 
-    #a{
-      padding: 0%;
-    
-    }
-    #nav_btn{
-     padding: 5px 40px;
-     margin-left: 10px;
-    }
+  #nav_btn {
+    display: none;
+  }
+  #a {
+    display: none;
+  }
+}
+
+#a{
+  padding: 0%;
+
+}
+#nav_btn{
+ padding: 5px 40px;
+ margin-left: 10px;
+}

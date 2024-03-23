@@ -120,6 +120,16 @@
     #nav_btn {
       display: none;
     }
+    #a {
+      display: none;
+    }
   }
   
- 
+  #a{
+    padding: 0%;
+  
+  }
+  #nav_btn{
+   padding: 5px 40px;
+   margin-left: 10px;
+  }

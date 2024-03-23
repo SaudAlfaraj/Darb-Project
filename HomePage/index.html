@@ -17,7 +17,7 @@
   <nav class="navbar fixed-top navbar-expand-lg ">
     
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/HomePage/index.html">
         <img src="/HomePage/img/logo out bg.png" alt="Logo" width="60" height="35"
         class="d-inline-block align-text-top">
         
@@ -29,23 +29,23 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+          <a class="nav-link" aria-current="page" href="/HomePage/index.html">الرئيسية</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">الخدمات</a>
+          <a class="nav-link" href="/HomePage/index.html#services">الخدمات</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">نبذة عنا</a>
+          <a class="nav-link" href="/HomePage/index.html#why">لماذا نحن</a>
         </li>
         <li class="nav-item dropdown" style="color: #FA6240;">
-          <a class="nav-link" href="#" style="color: #FA6240;"> إختبار الميول <span class="badge"
+          <a class="nav-link" href="/Edu_level/index.html" style="color: #FA6240;">مستويات الدروس<span class="badge"
             style="background-color: #FA6240;">جديد</span></a>
           </li>
         </ul>
         
       </div>
-      <button id="nav_btn" class="btn" type="button"">إستكشف</button>
-    </div>
+      <a id="a" href="/HomePage/index.html#services"><button id="nav_btn" class="btn" type="button">إستكشف</button></a>
+        </div>
   </nav>
   
   <!-- <img class="circel img-fluid" src="/HomePage/img/cir.png" alt=""> -->
@@ -120,7 +120,7 @@
         
         <h2>إختبار الميول<i class="fi fi-rr-briefcase icon"></i></h2>
         <h6> إختبار يقيس إهتمامك كطالب مقبل على الثانوي وإختيارك لميولك المهني بدري ماراح يتعبك </h6>
-        <a href="#" target="_blank" rel="noopener noreferrer">إبدأ الآن مجاناً !</a>
+        <a href="#"  rel="noopener noreferrer"  data-bs-toggle="modal" data-bs-target="#exampleModal">إبدأ الآن مجاناً !</a>
       </div>
 
       <div class="ser_card">
@@ -128,21 +128,21 @@
 
         <h6>تساعدك كطالب ثانوي في فهم نظام المسارات وكل مسار ومواد المسار التي ستكون في رحلتك 
         </h6>
-        <a href="/msarat/msarat.html" target="_blank" rel="noopener noreferrer"  style="padding: 2.3% 24%;">تصفح</a>
+        <a href="/msarat/msarat.html"  rel="noopener noreferrer"  style="padding: 2.3% 24%;">تصفح</a>
       </div>
 
       <div class="ser_card">
         <h2>مستويات الدروس<i class="fi fi-rr-briefcase icon"></i></h2>
 
         <h6> نظام يقدم الدروس والدورات بشكل ميسر ويقدم لك الخيار في تحديد مستوى شرح الدرس أو الدورة</h6>
-        <a href="/lessons/index.html" target="_blank" rel="noopener noreferrer">إبدأ الآن مجاناً !</a>
+        <a href="/Edu_level/"  rel="noopener noreferrer">إبدأ الآن مجاناً !</a>
       </div>
 
       <div class="ser_card">
         <h2>الـتـطـوع<i class="fi fi-rr-briefcase icon"></i></h2>
 
         <h6> خدمة تساعدك على فهم نظام التطوع للمقبلين على الثانوي ودليل لهم وتساعدهم في إنجاز التطوع </h6>
-        <a href="/tatawae/index.html" target="_blank" rel="noopener noreferrer" style="padding: 2.3% 24%;">تصفح</a>
+        <a href="/tatawae/index.html"  rel="noopener noreferrer" style="padding: 2.3% 24%;">تصفح</a>
       </div>
 
 
@@ -150,10 +150,29 @@
 
   </div>
 
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">سيتم توفير الخدمة قريباً</h1>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+      هي خدمة إحترافية سيتم تقديمها في منصة درب ترقبوا..
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- لماذا نحن ؟ -------------------------------------->
 
-  <div class="why">
+  <div class="why" id="why">
     <!-- العنوان -->
     <div class="why_title">
       <h5>الخيار الأنسب</h5>
@@ -190,10 +209,10 @@
 <!-- الفوتر -------------------------------------->
 <footer class="py-3 my-4">
   <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    <li class="nav-item"><a href="#" class="nav-link px-2 fw-semibold" style="color: #787878;">الرئيسية</a></li>
-    <li class="nav-item"><a href="#services" class="nav-link px-2 fw-semibold" style="color: #787878;">الخدمات</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-2 fw-semibold" style="color: #787878;">نبذة عنا</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-2 fw-semibold" style="color: #787878;">إختبار الميول</a></li>
+    <li class="nav-item"><a href="/HomePage/index.html" class="nav-link px-2 fw-semibold" style="color: #787878;">الرئيسية</a></li>
+    <li class="nav-item"><a href="/HomePage/index.html#services" class="nav-link px-2 fw-semibold" style="color: #787878;">الخدمات</a></li>
+    <li class="nav-item"><a href="/HomePage/index.html#why" class="nav-link px-2 fw-semibold" style="color: #787878;">لماذا نحن</a></li>
+    <li class="nav-item"><a href="/Edu_level/index.html" class="nav-link px-2 fw-semibold" style="color: #787878;">مستويات الدروس</a></li>
   </ul>
   <p class="text-center fw-semibold" style="color: #787878; font-size: large;">© 2024 جميع الحقوق محفوظة لفريق سهم</p>
 </footer>

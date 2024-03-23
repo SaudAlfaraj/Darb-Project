@@ -372,6 +372,9 @@ font-weight: 600;
   #nav_btn {
     display: none;
   }
+  #a {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -391,4 +394,13 @@ font-weight: 600;
   .sec_btn {
     width: 100%;
   }
+}
+
+#a{
+  padding: 0%;
+
+}
+#nav_btn{
+ padding: 5px 40px;
+ margin-left: 10px;
 }
