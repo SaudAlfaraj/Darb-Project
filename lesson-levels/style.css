@@ -1,0 +1,73 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  transition: .25s ease-in-out;
+  font-family: "IBM Plex Sans Arabic";
+}
+
+/* الناف بار -----------------------------------------------------------------------------------------*/
+.navbar {
+  background-color: #ffffff;
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  z-index: 9;
+}
+/* النصوص للناف */
+.nav-link {
+  margin: auto;
+  font-weight: 600;
+  font-size: large;
+  color: #3a3a3a;
+  transition: 0.25s ease-in-out;
+}
+
+/* عند الإشارة */
+.nav-link:hover {
+  color: #fa6240;
+  transition: 0.25s ease-in-out;
+}
+
+/* دفع الناف بار لليمين */
+.navbar-nav {
+  padding-right: 5%;
+}
+
+/* زر الناف */
+
+#nav_btn {
+  background-color: #fa6240;
+  font-weight: 600;
+  color: white;
+  padding: 0.3% 3%;
+  margin-left: 3%;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+  
+    .navbar {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .navbar-nav {
+      display: flex;
+    }
+  
+    #nav_btn {
+      display: none;
+    }
+  }

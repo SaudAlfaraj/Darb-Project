@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+*{
+
+    font-family:"IBM Plex Sans Arabic";
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    background-color: #ffffff;
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    z-index: 9;
+  }
+  
+  .nav-link {
+    margin: auto;
+    font-weight: 600;
+    font-size: large;
+    color: #3a3a3a;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #fa6240;
+    transition: 0.25s ease-in-out;
+  }
+
+  .navbar-nav {
+    padding-right: 5%;
+  }
+  
+  #nav_btn {
+    background-color: #fa6240;
+    font-weight: 600;
+    color: white;
+    padding: 0.3% 3%;
+    margin-left: 3%;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  
+  /* الواجهة العلوية */
+.head {
+    padding-top: 15%; margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+
+
+
+.msarat h2{/*عنواين المسارات */
+    font-size: 50px;
+    color: #3a3a3a;
+}
+
+.text  {
+    color: #3a3a3a;
+    font-size: 26px;
+}
+
+.head_btn {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa6240;
+    height: 50px;
+    width: 260px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+/* شروط التطوع */
+
+.rules {
+    margin: 8% 0;
+    text-align: center;
+}
+
+/* العنوان */
+
+.rules_title h1 {
+    color: #1e1e1e;
+    font-size: 50px;
+}
+
+.rules_cards {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules_card {
+    color: #3a3a3a;
+}
+
+
+  @media screen and (max-width: 1000px) {
+    .navbar {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .navbar-nav {
+      display: flex;
+    }
+  
+    #nav_btn {
+      display: none;
+    }
+  }
+  
+ 

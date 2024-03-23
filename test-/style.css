@@ -41,34 +41,3 @@ nav button {
     margin: 0 2%;
    text-align: center;
 }
-
-/* العنوان */
-h1 {
-    color: #3a3a3a;
-    text-align: center;
-    font-size: 40px;
-}
-
-/* الإختبار */
-
-#questions {
-    padding: 5% 0;
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* السؤال */
-.question {
-    font-size: 32px;
-    font-weight: bold;
-    color: #1e1e1e;
-}
-
-
-input[type='radio'] {
-    width: 500px;
-}

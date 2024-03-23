@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+*{
+
+    font-family:"IBM Plex Sans Arabic";
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    background-color: #ffffff;
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    z-index: 9;
+  }
+  
+  .nav-link {
+    margin: auto;
+    font-weight: 600;
+    font-size: large;
+    color: #3a3a3a;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #fa6240;
+    transition: 0.25s ease-in-out;
+  }
+
+  .navbar-nav {
+    padding-right: 5%;
+  }
+  
+  #nav_btn {
+    background-color: #fa6240;
+    font-weight: 600;
+    color: white;
+    padding: 0.3% 3%;
+    margin-left: 3%;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+  
+  /* الواجهة العلوية */
+.head {
+    padding-top: 13%; margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+
+#first{/*اول نص, نص تعريفي عن المسارات*/
+    font-size: 15px;
+}
+
+
+.msarat h2{/*عنواين المسارات */
+    font-size: 50px;
+    color: #3a3a3a;
+}
+
+.text  {
+    color: #3a3a3a;
+    font-size: 26px;
+}
+
+.small {/*small = النصوص الصغيره الرماديه ,اطباء محاميين الخ..*/
+    color: #787878;
+    font-size: 25px;
+}
+
+
+
+span{/*التخصصات  المتاحه*/
+    color:#fa6240;
+}
+
+
+
+
+.msarat {/*جعل النصوص في المنتصف*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.msar {
+    margin: 1% 0;
+}
+
+.msar a{/*زر التعرف على المزيد*/
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #fa6240;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 2% 10%;
+}
+a :hover{
+    color:royalblue;
+}
+@media screen and (max-width: 1000px) {
+    .circel {
+      display: none;
+    }
+    .navbar {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .navbar-nav {
+      display: flex;
+    }
+  
+    #nav_btn {
+      display: none;
+    }
+  }
+  
+ 

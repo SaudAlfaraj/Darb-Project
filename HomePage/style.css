@@ -7,12 +7,11 @@
   padding: 0;
 }
 body {
-
+  transition: .25s ease-in-out;
   font-family: "IBM Plex Sans Arabic";
 }
 
 /* الناف بار -----------------------------------------------------------------------------------------*/
-
 .navbar {
   background-color: #ffffff;
   /* border: 1px solid red; */
@@ -24,6 +23,7 @@ body {
 }
 
 .nav-link {
+  margin: auto;
   font-weight: 600;
   font-size: large;
   color: #3a3a3a;
@@ -33,6 +33,10 @@ body {
 .nav-link:hover {
   color: #fa6240;
   transition: 0.25s ease-in-out;
+}
+
+.navbar-nav {
+  padding-right: 5%;
 }
 
 #nav_btn {
@@ -45,15 +49,7 @@ body {
   font-size: 18px;
 }
 
-.circel {
-  margin: auto;
-  /* background-color: #FA6240; */
-  position: relative;
-  height: auto;
-  width: auto;
-  top: -280px;
-  left: -30%;
-}
+
 
 
 /* الواجهة العلوية -----------------------------------------------------------------------------------------*/

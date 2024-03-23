@@ -25,6 +25,9 @@ nav {
 }
 
 nav button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-image: url("/darb.project-main/img/share.png");
     font-weight: bold;
     font-size: 25px;
@@ -38,11 +41,12 @@ nav button {
     border-radius: 15px;
     margin: 0 2%;
    text-align: center;
+   padding: 0 5%;
 }
 
 .grad {
     width: 100%;
-    background-image: url("/resualt/img/Group 75.png");
+    /* background-image: url("/resualt/img/Group 75.png"); */
     background-repeat: no-repeat;
     background-size: contain;
     
